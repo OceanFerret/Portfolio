@@ -1,0 +1,41 @@
+<div class="signup-form-container">
+    <h2>Sign-up Form</h2>
+    <form [formGroup]='personsDataForm' (ngSubmit)="addData()">
+      <div class="input-contain">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" formControlName="firstName" required>
+
+      </div>
+  
+      <div class="input-contain">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" formControlName="lastName" required>
+      </div>
+  
+      <div class="input-contain">
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" formControlName="dateOfBirth" required>
+      </div>
+
+      <div class="input-contain">
+        <label for="favouriteColor">Favourite Color:</label>
+        <input type="text" id="favouriteColor" formControlName="favouriteColor" required>
+      </div>
+
+      <div class="input-contain">
+        <label for="favouriteHobby">Favourite Hobby:</label>
+        <input type="text" id="favouriteHobby" formControlName="favouriteHobby" required>
+      </div>
+  
+      <div class="btn-contain">
+        <button type="submit" class="userData-button" (click)="addData()">Sign Up</button>
+      </div>
+    </form>
+  </div>
+
+  <div>
+    <div *ngIf="userData$">
+        <app-card-output></app-card-output>
+      </div>
+  </div>
+  

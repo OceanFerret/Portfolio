@@ -1,0 +1,39 @@
+* {
+    padding: 1rem;
+}
+
+.input-container {
+    display: flex;
+    background-image: url('https://t3.ftcdn.net/jpg/04/12/82/16/360_F_412821610_95RpjzPXCE2LiWGVShIUCGJSktkJQh6P.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.input-side {
+    justify-content: center;
+    align-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.button-area-right {
+    display: flex;
+    margin-top: 40px;
+
+    button {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.gen-string-container {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: monospace;
+    border: 2px solid black;
+}

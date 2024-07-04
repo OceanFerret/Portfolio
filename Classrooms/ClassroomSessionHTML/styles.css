@@ -1,0 +1,46 @@
+header {
+    text-align: center;
+    position: absolute top;
+    align-items: center;
+}
+
+h1{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home{
+    background-color: rgb(214, 205, 205);
+}
+
+.homeDinos{
+    width: 550px;
+    height: 270px;
+}
+
+.box{
+    background-color: #ff0000;
+    height: 150px;
+    width: 150px;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+
+#textCheckAdjust{
+    text-align: center;
+    align-items: justify center;
+}
+
+.buttonDeco{
+    background-color: #e4d5d5;
+    border: none;
+    border-radius: 20%;
+    box-shadow: 3em #00ff00;
+}
+
+.buttonDeco:hover{
+    background-color: rgb(142, 131, 131);
+    border: none;
+    border-radius: 20%;
+    box-shadow: 3em #00ff00;
+}

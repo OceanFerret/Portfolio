@@ -1,0 +1,38 @@
+<form [formGroup]="formGroup" (ngSubmit)="generateString()">
+    <div class="input-container">
+        <div class="input-side">
+    <div class="firstName">
+      <label for="first">First Name:</label>
+      <input type="text" id="first" formControlName="first">
+    </div>
+    <div class="secondName">
+      <label for="second">Last Name:</label>
+      <input type="text" id="second" formControlName="second">
+    </div>
+    <div class="symbol-area">
+        <label for="symbol">Symbol:</label>
+        <input type="checkbox" id="symbol" formControlName="symbol">
+    </div>
+</div>
+
+<div class="button-area-right">
+    <div class="button-decorator">
+    <button type="submit" (click)=onSubmit()>Generate</button>
+    </div>
+</div>
+    </div>
+  </form>
+  <div *ngIf="generatedString" class="gen-string-container">
+    <label for="generatedString">Username: </label>
+    {{ generatedString }}
+  </div>
+
+
+<!-- <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div formGroupName="first">
+        <input type="text" placeholder="some id" formControlName="someId">
+        <div formGroupName="second">
+            <input type="text" placeholder="some text" formControlName="someText">
+        </div>
+    </div>
+</form> -->

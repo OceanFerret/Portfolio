@@ -1,0 +1,15 @@
+<div class="app-calulator">
+    <div class="input-group">
+        <input type="number" [(ngModel)]="firstNumber">
+        <input type="number" [(ngModel)]="secondNumber">
+    </div>
+    
+    <div>
+        <button (click)="addFunc(firstNumber, secondNumber)">Add</button>
+        <button (click)="subtractFunc(firstNumber,secondNumber)">Subtract</button>
+        <button (click)="multiplyFunc(firstNumber,secondNumber)">Multiply</button>
+        <button (click)="divideFunc(firstNumber,secondNumber)">Divide</button>
+    </div>
+    <!-- Display the result -->
+    <div class="result">Result: {{result}}</div>
+  </div>
